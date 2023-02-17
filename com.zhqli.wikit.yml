@@ -35,8 +35,8 @@ modules:
         only-arches:
           - aarch64
         dest: rust
-        url: https://static.rust-lang.org/dist/2023-02-13/rust-nightly-aarch64-unknown-linux-gnu.tar.xz
-        sha256: b9a940e363743b72c28d891938244e870a0e64d9bd28c9054729f4994c6399dd
+        url: https://static.rust-lang.org/dist/2023-02-17/rust-nightly-aarch64-unknown-linux-gnu.tar.xz
+        sha256: cae41cb5a34c616f4e1de10c739ce69029e0d2899fad8ac5169d4c358cca7978
         x-checker-data:
           type: rust
           package: rust
@@ -46,8 +46,8 @@ modules:
         only-arches:
           - x86_64
         dest: rust
-        url: https://static.rust-lang.org/dist/2023-02-13/rust-nightly-x86_64-unknown-linux-gnu.tar.xz
-        sha256: 4b21772bad60e79992d8a81405a0532744df65c93b50c9ed49bf6d3760f10835
+        url: https://static.rust-lang.org/dist/2023-02-17/rust-nightly-x86_64-unknown-linux-gnu.tar.xz
+        sha256: 93c006bbee7a22df4783e259f6237d490209e8206cc34297fd134fabb93d229f
         x-checker-data:
           type: rust
           package: rust
@@ -56,8 +56,8 @@ modules:
       # Required by yew
       - type: archive
         dest: rust-std-wasm32
-        url: https://static.rust-lang.org/dist/2023-02-13/rust-std-nightly-wasm32-unknown-unknown.tar.xz
-        sha256: b6ce769e7ebea4fa0eef2330f9b8655662fbb4fe49064ff8993822c5dde6771a
+        url: https://static.rust-lang.org/dist/2023-02-17/rust-std-nightly-wasm32-unknown-unknown.tar.xz
+        sha256: 7c0234a47b4a233548cb4531e99554d03afd3c241a7c0386027bfa2153fdc251
         x-checker-data:
           type: rust
           package: rust-std
@@ -65,8 +65,8 @@ modules:
           target: wasm32-unknown-unknown
       - type: archive
         dest: rust-src
-        url: https://static.rust-lang.org/dist/2023-02-13/rust-src-nightly.tar.xz
-        sha256: 931d7b6d770da81991ed0b5a105d87204b3f8f245596ccab1eea44489b3c3d0b
+        url: https://static.rust-lang.org/dist/2023-02-17/rust-src-nightly.tar.xz
+        sha256: d0d85874a28f693649a145b519ca8d976f177c0450812482c858c7d1aba0dde9
         x-checker-data:
           type: rust
           package: rust-src
@@ -84,11 +84,12 @@ modules:
     sources:
       - type: git
         url: https://github.com/ikey4u/wikit
-        commit: 7315569317c6492646d9b954811a64ae40a7df11
+        commit: 352ccf2b8352fedf213f61c218ad05c32277f53b
         x-checker-data:
           type: anitya
           project-id: 326657
           tag-template: $version
+        tag: 0.5.0
       - generated-sources.json
 
       # TODO: remove it after upstream update the lockfile
@@ -127,8 +128,8 @@ modules:
           - install -D -m755 sass ${FLATPAK_DEST}/bin/sass
         sources:
           - type: archive
-            url: https://github.com/sass/dart-sass/releases/download/1.50.0/dart-sass-1.50.0-linux-x64.tar.gz
-            sha256: 85df33682a8a38006aca12e2367b45218679430b65d2ac39e627c6496d80ba99
+            url: https://github.com/sass/dart-sass/releases/download/1.58.1/dart-sass-1.58.1-linux-x64.tar.gz
+            sha256: e7f9847ac8426a4a7f7a3bbd321159f155ef1c4b971a20d5b542365212345cf5
             only-arches:
               - x86_64
             x-checker-data:
@@ -136,8 +137,8 @@ modules:
               project-id: 326670
               url-template: https://github.com/sass/dart-sass/releases/download/$version/dart-sass-$version-linux-x64.tar.gz
           - type: archive
-            url: https://github.com/sass/dart-sass/releases/download/1.50.0/dart-sass-1.50.0-linux-arm64.tar.gz
-            sha256: 7e86e54078943679c2d2daa24f7c0622523171b798ca243afca1b2bcee2bb100
+            url: https://github.com/sass/dart-sass/releases/download/1.58.1/dart-sass-1.58.1-linux-arm64.tar.gz
+            sha256: dc12bd4834ccf731ed007776780899d5d7b096bcf0f947e5a9c3643ad57f9015
             only-arches:
               - aarch64
             x-checker-data:
@@ -173,12 +174,13 @@ modules:
     sources:
       - type: git
         url: https://github.com/ikey4u/wikit
-        commit: 7315569317c6492646d9b954811a64ae40a7df11
+        commit: 352ccf2b8352fedf213f61c218ad05c32277f53b
         x-checker-data:
           type: anitya
           project-id: 326657
           tag-template: $version
 
+        tag: 0.5.0
       - generated-sources.json
 
       # TODO: remove it after upstream update the lockfile
