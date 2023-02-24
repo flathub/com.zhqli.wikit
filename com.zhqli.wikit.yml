@@ -84,11 +84,12 @@ modules:
     sources:
       - type: git
         url: https://github.com/ikey4u/wikit
-        commit: 7315569317c6492646d9b954811a64ae40a7df11
+        commit: 352ccf2b8352fedf213f61c218ad05c32277f53b
         x-checker-data:
           type: anitya
           project-id: 326657
           tag-template: $version
+        tag: 0.5.0
       - generated-sources.json
 
       # TODO: remove it after upstream update the lockfile
@@ -127,8 +128,8 @@ modules:
           - install -D -m755 sass ${FLATPAK_DEST}/bin/sass
         sources:
           - type: archive
-            url: https://github.com/sass/dart-sass/releases/download/1.50.0/dart-sass-1.50.0-linux-x64.tar.gz
-            sha256: 85df33682a8a38006aca12e2367b45218679430b65d2ac39e627c6496d80ba99
+            url: https://github.com/sass/dart-sass/releases/download/1.58.2/dart-sass-1.58.2-linux-x64.tar.gz
+            sha256: aff57461bc00af22f717ca537b7a0aabaa92826445f9d3cc97fbce3008f5eb84
             only-arches:
               - x86_64
             x-checker-data:
@@ -136,8 +137,8 @@ modules:
               project-id: 326670
               url-template: https://github.com/sass/dart-sass/releases/download/$version/dart-sass-$version-linux-x64.tar.gz
           - type: archive
-            url: https://github.com/sass/dart-sass/releases/download/1.50.0/dart-sass-1.50.0-linux-arm64.tar.gz
-            sha256: 7e86e54078943679c2d2daa24f7c0622523171b798ca243afca1b2bcee2bb100
+            url: https://github.com/sass/dart-sass/releases/download/1.58.2/dart-sass-1.58.2-linux-arm64.tar.gz
+            sha256: 37f2ab444342171793869b8c5ea3318f29cb70223bd438cb047d7a7d9abc5934
             only-arches:
               - aarch64
             x-checker-data:
@@ -173,12 +174,13 @@ modules:
     sources:
       - type: git
         url: https://github.com/ikey4u/wikit
-        commit: 7315569317c6492646d9b954811a64ae40a7df11
+        commit: 352ccf2b8352fedf213f61c218ad05c32277f53b
         x-checker-data:
           type: anitya
           project-id: 326657
           tag-template: $version
 
+        tag: 0.5.0
       - generated-sources.json
 
       # TODO: remove it after upstream update the lockfile
