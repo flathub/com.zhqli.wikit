@@ -1,7 +1,7 @@
 app-id: com.zhqli.wikit
 runtime: org.gnome.Platform
 # TODO: upgrade after tauri supports new webkit2ttk
-runtime-version: '42'
+runtime-version: '47'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.node16
